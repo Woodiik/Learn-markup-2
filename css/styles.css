@@ -6,6 +6,7 @@
    --accent-color: #2196f3;
    --bg-secondary-color: #2f303a;
    --bg-team-color: #f5f4fa;
+   --icon-color: #AFB1B8;
 }
 
 body {
@@ -47,6 +48,7 @@ img {
    /*outline: 2px solid red;*/
    margin-right: auto;
    margin-left: auto;
+   text-align: center;
 }
 
 .header {
@@ -134,7 +136,7 @@ img {
 
 .contacts-icon {
 
-   fill: var(--secondary-text-color);
+   fill: currentColor;
    margin-right: 10px;
    margin-left: 30px;
 
@@ -174,7 +176,7 @@ img {
    padding-bottom: 200px;
 }
 
-.title {
+.banner-title {
    margin-bottom: 30px;
    font-weight: 900;
    font-size: 44px;
@@ -235,13 +237,14 @@ img {
    margin-left: 0;
 }
 
-.advantage-title {
+.advantage-tittle {
    margin-bottom: 10px;
 
    font-weight: 700;
    font-size: 14px;
    line-height: 1.1;
    letter-spacing: 0.03em;
+   text-align: left;
    text-transform: uppercase;
 
 }
@@ -251,6 +254,7 @@ img {
    font-size: 14px;
    line-height: 1.7;
    letter-spacing: 0.03em;
+   text-align: left;
    color: var(--secondary-text-color);
 }
 
@@ -271,12 +275,12 @@ img {
    margin-right: 0;
 }
 
-.about-tittle {
+.tittle {
    margin-bottom: 50px;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.2;
-   text-align: center;
+
    letter-spacing: 0.03em;
 }
 
@@ -288,8 +292,6 @@ img {
 
 .team-list {
    display: flex;
-   text-align: center;
-
 }
 
 .team-list-item {
@@ -321,10 +323,7 @@ img {
    width: 44px;
    height: 44px;
    border-radius: 50%;
-}
-
-.soc-net-link:hover {
-   background-color: var(--accent-color);
+   color: var(--icon-color);
 }
 
 .soc-net-link:first-child {
@@ -332,26 +331,26 @@ img {
 }
 
 .soc-net-icon {
-   fill: #AFB1B8;
+   fill: currentColor;
 
 }
 
-.soc-net-icon:hover {
-   fill: var(--white-main-color);
+.soc-net-link:hover {
+   color: var(--white-main-color);
+   background-color: var(--accent-color);
 }
+
+
+
+
+
+
 
 .team-list-item:first-child {
    margin-left: 0;
 }
 
-.team-tittle {
-   margin-bottom: 50px;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.2;
-   text-align: center;
-   letter-spacing: 0.03em;
-}
+
 
 .name-position {
    margin-top: 30px;
@@ -374,6 +373,41 @@ img {
    line-height: 1.2;
    letter-spacing: 0.03em;
    color: var(--secondary-text-color);
+
+}
+
+.clients {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.clients-list {
+   display: flex;
+}
+
+.clients-list-item {
+   margin-left: 30px;
+}
+
+.clients-list-item:first-child {
+   margin-left: 0;
+}
+
+.clients-list-link {
+   display: block;
+   width: 170px;
+   color: var(--icon-color);
+   border: 1px currentColor solid;
+   border-radius: 4px;
+}
+
+.clients-list-link:hover {
+   color: var(--accent-color);
+}
+
+.clients-list-icon {
+   fill: currentColor;
+   margin: 16px 32px;
 }
 
 .footer {
@@ -382,30 +416,40 @@ img {
    padding-top: 60px;
 }
 
+.footer-container {
+   display: flex;
+   align-items: baseline;
+}
+
 .logo-footer {
    margin-bottom: 20px;
-   display: inline-block;
+   display: block;
+
    font-family: "Raleway";
    font-weight: 700;
    font-size: 26px;
    line-height: 1.2;
    text-decoration: none;
+   text-align: left;
    letter-spacing: 0.03em;
+
    color: var(--white-main-color);
 }
 
 .superscription {
-   margin-bottom: 6px;
+   margin-bottom: 10px;
    font-size: 14px;
    line-height: 1.7;
    font-style: normal;
    color: var(--white-main-color);
    letter-spacing: 0.03em;
+   text-align: left;
 }
 
 .address {
    display: flex;
    flex-direction: column;
+   text-align: left;
 }
 
 .contacts-footer {
@@ -415,7 +459,36 @@ img {
    letter-spacing: 0.03em;
    text-decoration: none;
    font-style: normal;
+   text-align: left;
 }
+
+.join-in {
+   margin-left: 70px;
+}
+
+.footer-text {
+   display: block;
+   margin-bottom: 20px;
+
+   text-align: left;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--white-main-color);
+}
+
+.footer-list {
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.footer-link {
+   color: white;
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 .first {
    margin-bottom: 10px;
