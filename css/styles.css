@@ -306,11 +306,12 @@ img {
    background-color: var(--white-main-color);
 }
 
+.team-list-item-discr {
+   padding: 30px 32px;
+}
+
 .team-soc-net {
    display: flex;
-   margin-left: 32px;
-   margin-right: 32px;
-   margin-bottom: 30px;
 }
 
 .soc-net-item {
@@ -362,10 +363,7 @@ img {
 
 
 .name-position {
-   margin-top: 30px;
    margin-bottom: 16px;
-
-   border-radius: 0 0 4px 4px;
 }
 
 .team-name {
