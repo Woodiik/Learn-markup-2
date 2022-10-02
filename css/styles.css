@@ -126,6 +126,8 @@ img {
 .contacts {
    display: flex;
    align-items: center;
+   margin-left: 30px;
+
    letter-spacing: 0.02em;
    font-weight: 500;
    font-style: normal;
@@ -139,10 +141,10 @@ img {
 
    fill: currentColor;
    margin-right: 10px;
-   margin-left: 30px;
+
 }
 
-.icon-firts-child {
+.contacts:first-child {
    margin-left: 0;
 }
 
@@ -218,15 +220,18 @@ img {
 }
 
 .icon-block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 270px;
    height: 120px;
    background-color: #F5F4FA;
    border-radius: 4px;
    margin-bottom: 30px;
 }
 
-.advantage-list-icon {
-   margin: 25px 100px;
-}
+
 
 
 .advantage-list-item {
@@ -306,7 +311,6 @@ img {
    margin-left: 32px;
    margin-right: 32px;
    margin-bottom: 30px;
-   justify-content: center;
 }
 
 .soc-net-item {
@@ -318,8 +322,10 @@ img {
 }
 
 .soc-net-link {
-   display: block;
-   padding: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
    width: 44px;
    height: 44px;
    border-radius: 50%;
@@ -335,10 +341,13 @@ img {
 
 }
 
-.soc-net-link:hover {
+.soc-net-link:hover,
+.soc-net-link:focus {
    color: var(--white-main-color);
    background-color: var(--accent-color);
 }
+
+
 
 
 
@@ -394,20 +403,25 @@ img {
 }
 
 .clients-list-link {
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 92px;
+
    width: 170px;
    color: var(--icon-color);
    border: 1px currentColor solid;
    border-radius: 4px;
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
    color: var(--accent-color);
 }
 
 .clients-list-icon {
    fill: currentColor;
-   margin: 16px 32px;
 }
 
 .footer {
